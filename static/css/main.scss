@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Cookie|Lato|Pacifico|Raleway|Merriweather|Modak|Ultra|Bungee|Rochester|Rokkitt|Encode+Sans:wght@400;500;700;900|Noto+Serif|Fredoka+One|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overscroll-behavior-y: none;
+  overflow-x: hidden !important;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -webkit-user-drag: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   -o-user-select: none;
+//   -o-user-drag: none;
+//   user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4.5px #a7a7a7;
+          box-shadow: inset 0 0 4.5px #a7a7a7;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset -0.4px 0px 3px 1.3px #e2e2e2;
+  box-shadow: inset -0.4px 0px 3px 1.3px #e2e2e2;
+  background: #594374fc;
+  border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d2e50fc;
+}
+
+::-moz-selection {
+  background: #ec617dfc;
+  color: #fff;
+}
+
+::selection {
+  background: #ec617dfc;
+  color: #fff;
+}
+
+.download-btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
