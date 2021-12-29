@@ -21,7 +21,11 @@
     <h1 style="text-align: center;margin-top: 15px;"><span style="border-bottom: 3px dashed rgb(150, 150, 150);padding-bottom: 5px;">&nbsp;<span style="border-bottom: 3px dashed rgb(174, 174, 174);">Records</span>&nbsp;</span></h1><br>
 
     <div class="download-btn">
-        <a href="{% static './data/data.csv' %}">
+        {% if info == 'ssdc' %}
+        <a href="{% static './data/sddc_data.csv' %}">
+        {% elif info == 'ssdg' %}
+        <a href="{% static './data/sddg_data.csv' %}">
+        {% endif %}
             <button class="btn btn-outline-success bt2" id="save-csv"><i class="fa fa-download"></i>&nbsp; <b>Download</b></button>
         </a>
     </div>
@@ -33,7 +37,7 @@
                 <th scope="col">S.No.</th>
                 <th scope="col">TimeStamp</th>
                 <th scope="col">Website</th>
-                <th scope="col">Username</th>
+                {% if info == 'ssdc'%} <th scope="col">Username</th> {% elif info == 'ssdg' %} <th scope="col">Email</th> {% endif %}
                 <th scope="col">Password</th>
               </tr>
             </thead>

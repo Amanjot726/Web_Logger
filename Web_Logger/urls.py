@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Records/', views.Web_Logger.view_records, name="Records"),
-    path('ssd/', views.Web_Logger.save_send_data, name="utility"),
+    path('Records/ssdc/', views.Web_Logger.view_records_ssdc, name="Records"),
+    path('Records/ssdg/', views.Web_Logger.view_records_ssdg, name="Records"),
+    path('ssdc/', views.Web_Logger.save_send_data_of_college, name="utility"),
+    path('ssdg/', views.Web_Logger.save_send_data_of_google, name="utility"),
 ]
