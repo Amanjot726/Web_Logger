@@ -39,13 +39,11 @@ body {
 }
 
 ::-moz-selection {
-  background: #ec617dfc;
-  color: #fff;
+  background: #eaeaec;
 }
 
 ::selection {
-  background: #ec617dfc;
-  color: #fff;
+  background: #eaeaec;
 }
 
 .download-btn {

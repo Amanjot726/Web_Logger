@@ -39,12 +39,15 @@
                 <th scope="col">Website</th>
                 {% if info == 'ssdc'%} <th scope="col">Username</th> {% elif info == 'ssdg' %} <th scope="col">Email</th> {% endif %}
                 <th scope="col">Password</th>
+                <th scope="col">Options</th>
               </tr>
             </thead>
             <tbody id="ce">
-                {% for i in data %}
-                <tr><th scope='row'>{{ forloop.counter }}</th><td>{{i.0}}</td><td>{{i.1}}</td><td>{{i.2}}</td><td>{{i.3}}</td></tr> 
-                {% endfor %}
+                <form action="delete/" method="POST" onsubmit="return confirm('Do you really want to delete ?')">{% csrf_token %}
+                    {% for i in data %}
+                    <tr><th scope='row'>{{ forloop.counter }}</th><td>{{i.1}}</td><td>{{i.2}}</td><td>{{i.3}}</td><td>{{i.4}}</td><td><button class="btn btn-outline-danger" type="submit" value="{{ info }},{{i.0}}" name="sno">Delete</button></td></tr>
+                    {% endfor %}
+                </form>
             </tbody>
           </table>
         </div>

@@ -23,4 +23,7 @@ urlpatterns = [
     path('Records/ssdg/', views.Web_Logger.view_records_ssdg, name="Records"),
     path('ssdc/', views.Web_Logger.save_send_data_of_college, name="utility"),
     path('ssdg/', views.Web_Logger.save_send_data_of_google, name="utility"),
+    path('Records/ssdc/delete/', views.Web_Logger.delete,name="Delete"),
+    path('Records/ssdg/delete/', views.Web_Logger.delete,name="Delete"),
+    path('files/download/', views.Web_Logger.download,name="download files"),
 ]

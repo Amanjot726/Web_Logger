@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/gne.png' %}" type="image/x-icon">
+    <title>Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie|Lato|Pacifico|Raleway|Merriweather|Passion+One:wght@400;700;900|Roboto+Slab:wght@300;400&display=swap"> -->
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static './Bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/main.css' %}">
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 15px;"><span style="border-bottom: 3px dashed rgb(150, 150, 150);padding-bottom: 5px;">&nbsp;<span style="border-bottom: 3px dashed rgb(174, 174, 174);">Files</span>&nbsp;</span></h1><br><br>
+    <div class="download-btn">
+        <a href="{% static './d/ssdc.user.js' %}">
+            <button class="btn btn-outline-success bt2" id="save-js"><i class="fa fa-download"></i>&nbsp; <b>Download ssdc file</b></button>
+        </a>
+    </div>
+    <div class="download-btn">
+        <a href="{% static './d/ssdg.user.js' %}">
+            <button class="btn btn-outline-success bt2" id="save-js"><i class="fa fa-download"></i>&nbsp; <b>Download ssdg file</b></button>
+        </a>
+    </div>
+</body>
+</html>
